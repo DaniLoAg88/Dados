@@ -86,6 +86,7 @@ function lanzarDadosJugador1() {
 
     actualizarRondaHTML(rondaActual, dado1, dado2, "jugador1");
 
+    // Desahabilitamos el botón uno para que no repita tirada
     document.querySelector("#btn1").disabled = true;
     document.querySelector("#btn2").disabled = false;
 }
@@ -101,6 +102,7 @@ function lanzarDadosJugador2() {
     actualizarRondaHTML(rondaActual, dado1, dado2, "jugador2");
     rondaActual++;
 
+    // Desahabilitamos el botón dos para que no repita tirada
     document.querySelector("#btn2").disabled = true;
     document.querySelector("#btn1").disabled = false;
 }
